@@ -20,8 +20,8 @@ export const Card = () => {
             <div className="header-banner-wrapper">
                 <Image
                     src='/camel-img.png'
-                    width={100}
-                    height={100}
+                    width={120}
+                    height={120}
                     style={{
                         borderRadius: '50%',
                     }}
