@@ -6,14 +6,16 @@ import { useState } from "react"
 export const Card = () => {
     const [headerBanner, setHeaderBanner] = useState('Muhammad Rifqi Maulana')
     const [inputString, setInputString] = useState('')
-    
+
     const handleChange = (e) => {
         setInputString(e.target.value)
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setHeaderBanner(inputString)
+        if (inputString !== '') {
+            setHeaderBanner(inputString)
+        }
     }
     return (
         <div className="banner-container">
